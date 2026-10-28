@@ -106,7 +106,7 @@ The site is deployed on Vercel with the default Next.js preset. Import the repos
 vercel deploy --prod
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` when serving from a custom domain; otherwise the canonical URL falls back to `https://nexora-ai.vercel.app`.
+Set `NEXT_PUBLIC_SITE_URL` when serving from a custom domain; otherwise the canonical URL falls back to `https://nexora-ai-hq.vercel.app`.
 
 ## Performance & SEO
 

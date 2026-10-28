@@ -7,7 +7,7 @@ This ledger records the origin, brand transformation and asset provenance for **
 - **Original Working Directory:** `E:\Projects\landing\next\keyonehub-marketing-site-bluetheme`
 - **Rebuilt Project Name:** `nexora-ai`
 - **Final Repository:** `https://github.com/JORDANROBERTO74/nexora-ai`
-- **Live Production URL:** `https://nexora-ai.vercel.app`
+- **Live Production URL:** `https://nexora-ai-hq.vercel.app`
 - **Mode:** Change pass over the existing layout. The section structure, copy intent and the interactive demo engine were reused; only the blocking items were rewritten.
 
 The source template was mid-rebrand: the hero and metadata already said **NEXORA** while the product mockups, footer and demo copy still said **K1HUB** (and `k1hub.com`). This build completes that rebrand to a single name.
