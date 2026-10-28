@@ -124,7 +124,7 @@ export default function OrchestrationPanel({
     >
       {!showBody ? (
         <p className="text-sm text-muted-foreground">
-          Waiting for Slack mention routing…
+          Waiting for channel mention routing…
         </p>
       ) : (
         <section className="min-w-0 w-full space-y-0 text-sm">

@@ -3,7 +3,7 @@ import { MENTION_TOKEN, SLACK_AGENT_AUTHOR } from '../../constants'
 export type MentionSegment = { type: 'text' | 'mention'; value: string }
 
 export function authorInitial(author: string): string {
-  if (author === SLACK_AGENT_AUTHOR) return 'K1'
+  if (author === SLACK_AGENT_AUTHOR) return 'N'
 
   const parts = author.trim().split(/\s+/).filter(Boolean)
   if (parts.length >= 2) {
