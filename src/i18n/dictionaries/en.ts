@@ -23,8 +23,9 @@ export const en = {
   },
   hero: {
     eyebrow: "Operational intelligence for autonomous work",
-    title: "NEXORA",
     subtitle: "The business aware engine for your AI agents",
+    lead:
+      "Nexora turns the systems you already run into one business-aware execution layer, with approval gates your team still owns.",
     primaryCta: "Explore Command Center",
     secondaryCta: "View solutions",
   },
@@ -160,31 +161,15 @@ export const en = {
   },
   demos: {
     eyebrow: "See it in action",
-    title:
-      "From a channel thread to a governed agent response, without leaving the conversation.",
+    title: "One request, four checks, and an approval you can defend.",
     description:
-      "Interactive demos show how Nexora connects channels, live systems, orchestration, risk assessment and governance in revenue-critical workflows. Each story runs end to end with its own channel, signals and audit-ready outcome.",
+      "A purchase request enters Nexora and leaves as a policy-checked decision: budget, vendor risk, spend limits and contract terms verified against live systems, with the evidence attached for the approver.",
     note: "Product interface shown in English.",
     slots: [
       {
-        title: "Churn risk detection",
+        title: "Spend approval with evidence",
         description:
-          "From a messy #enterprise-support thread to churn risk detection, orchestration and a governed agent reply.",
-      },
-      {
-        title: "Silent migration pattern",
-        description:
-          "From #customer-ops signals to silent migration detection, evidence synthesis and escalation with an audit trail.",
-      },
-      {
-        title: "Expansion opportunity discovery",
-        description:
-          "From a #sales question to a ranked upgrade list and a governed channel reply.",
-      },
-      {
-        title: "Account consolidation discovery",
-        description:
-          "From #revops billing signals to mapped buying groups and a governed enterprise agreement reply.",
+          "From a $48k renewal request to a routed CFO approval — every check, gate and decision on the record.",
       },
     ],
   },

@@ -25,7 +25,7 @@ export function SolutionsSection({
   return (
     <div id="solutions" className="pt-32">
       <div className="text-center">
-        <p className="kh-eyebrow text-[#005ea8]">{content.eyebrow}</p>
+        <p className="kh-eyebrow text-[#c2410c]">{content.eyebrow}</p>
         <h2 className="mt-5 text-balance text-4xl font-extrabold leading-tight tracking-normal text-[#111827] sm:text-6xl">
           {content.title}
         </h2>

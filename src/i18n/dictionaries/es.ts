@@ -25,8 +25,9 @@ export const es: Dictionary = {
   },
   hero: {
     eyebrow: "Inteligencia operativa para trabajo autónomo",
-    title: "NEXORA",
     subtitle: "El motor que entiende el negocio para tus agentes de IA",
+    lead:
+      "Nexora convierte los sistemas que ya usas en una sola capa de ejecución con contexto de negocio, con puertas de aprobación que tu equipo sigue controlando.",
     primaryCta: "Explorar Command Center",
     secondaryCta: "Ver soluciones",
   },
@@ -162,31 +163,15 @@ export const es: Dictionary = {
   },
   demos: {
     eyebrow: "Vívelo en acción",
-    title:
-      "De un hilo de canal a una respuesta de agente gobernada, sin salir de la conversación.",
+    title: "Una solicitud, cuatro comprobaciones y una aprobación defendible.",
     description:
-      "Los demos interactivos muestran cómo Nexora conecta canales, sistemas en vivo, orquestación, evaluación de riesgo y gobernanza en flujos críticos para los ingresos. Cada historia se ejecuta de principio a fin con su propio canal, sus señales y un desenlace auditable.",
+      "Una solicitud de compra entra en Nexora y sale como una decisión verificada: presupuesto, riesgo del proveedor, límites de gasto y condiciones del contrato comprobados contra sistemas en vivo, con la evidencia adjunta para quien aprueba.",
     note: "Interfaz del producto en inglés.",
     slots: [
       {
-        title: "Detección de riesgo de fuga",
+        title: "Aprobación de gasto con evidencia",
         description:
-          "De un hilo desordenado en #enterprise-support a la detección del riesgo, la orquestación y una respuesta de agente gobernada.",
-      },
-      {
-        title: "Patrón de migración silenciosa",
-        description:
-          "De las señales en #customer-ops a la detección de una migración silenciosa, la síntesis de evidencias y la escalada con rastro de auditoría.",
-      },
-      {
-        title: "Descubrimiento de expansión",
-        description:
-          "De una pregunta en #sales a una lista priorizada de upgrades y una respuesta gobernada en el canal.",
-      },
-      {
-        title: "Consolidación de cuentas",
-        description:
-          "De las señales de facturación en #revops a los grupos de compra mapeados y una respuesta gobernada sobre el acuerdo empresarial.",
+          "De una renovación de 48.000 $ a una aprobación enviada al CFO, con cada comprobación, puerta y decisión registradas.",
       },
     ],
   },

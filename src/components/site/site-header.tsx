@@ -37,7 +37,7 @@ export function SiteHeader({
 
       <nav
         aria-label={content.localeLabel}
-        className="hidden items-center gap-7 rounded-full border border-white/10 bg-white/10 px-5 py-2 text-sm text-white/80 backdrop-blur-xl md:flex"
+        className="hidden items-center gap-8 text-[0.88rem] text-white/60 md:flex"
       >
         {content.links.map((link) => (
           <a key={link.href} href={link.href} className="transition hover:text-white">
@@ -83,7 +83,7 @@ export function SiteHeader({
       {isOpen && (
         <div
           id="mobile-nav"
-          className="w-full rounded-xl border border-white/15 bg-[#07182e]/95 p-5 backdrop-blur-xl md:hidden"
+          className="w-full rounded-xl border border-white/15 bg-[#17120f]/95 p-5 backdrop-blur-xl md:hidden"
         >
           <nav aria-label={content.localeLabel} className="flex flex-col gap-4">
             {content.links.map((link) => (

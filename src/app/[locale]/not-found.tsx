@@ -16,7 +16,7 @@ export default function NotFound() {
       <p className="mt-6 max-w-md text-lg leading-8 text-[#5f6673]">{dict.body}</p>
       <Link
         href={`/${defaultLocale}`}
-        className="mt-10 inline-flex items-center gap-2 rounded-md bg-[#005ea8] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#004a85]"
+        className="mt-10 inline-flex items-center gap-2 rounded-md bg-[#c2410c] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#9a3412]"
       >
         {dict.cta}
       </Link>

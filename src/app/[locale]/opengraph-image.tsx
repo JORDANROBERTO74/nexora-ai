@@ -29,7 +29,7 @@ export default async function Image({
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "72px 80px",
-          background: "#07182e",
+          background: "#15100e",
           color: "#ffffff",
         }}
       >
@@ -40,7 +40,7 @@ export default async function Image({
               width: "34px",
               height: "34px",
               borderRadius: "9px",
-              background: "#005ea8",
+              background: "#c2410c",
               alignItems: "center",
               justifyContent: "center",
               fontSize: "20px",
@@ -61,7 +61,7 @@ export default async function Image({
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "22px" }}>
-          <div style={{ fontSize: "20px", color: "#8fcfff", letterSpacing: "0.16em", textTransform: "uppercase" }}>
+          <div style={{ fontSize: "20px", color: "#fdba74", letterSpacing: "0.16em", textTransform: "uppercase" }}>
             {dict.hero.eyebrow}
           </div>
           <div

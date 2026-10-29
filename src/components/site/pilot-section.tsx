@@ -6,7 +6,7 @@ export function PilotSection({ content }: Readonly<{ content: Dictionary["pilot"
     <section id="pilot" className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:py-32">
       <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
         <div>
-          <p className="kh-eyebrow text-[#005ea8]">{content.eyebrow}</p>
+          <p className="kh-eyebrow text-[#c2410c]">{content.eyebrow}</p>
           <h2 className="mt-5 text-balance text-4xl font-semibold leading-tight tracking-normal text-[#111827] sm:text-6xl">
             {content.title}
           </h2>

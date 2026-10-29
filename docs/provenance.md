@@ -16,7 +16,7 @@ The source template was mid-rebrand: the hero and metadata already said **NEXORA
 
 - **Brand:** Nexora
 - **Sector:** Business-aware automation layer for AI agents — orchestration, knowledge graph and governance.
-- **Visual system:** Navy (`#07182e`), deep blue (`#005ea8`), sky (`#8fcfff`), signal red (`#e30613`), ink (`#111827`), soft ink (`#5f6673`), line (`#d7dbe3`), paper (`#f7f8fb`).
+- **Visual system:** Navy (`#07182e`), accent orange (`#c2410c`), light orange (`#fdba74`), signal red (`#e30613`), ink (`#111827`), soft ink (`#5f6673`), line (`#d7dbe3`), paper (`#f7f8fb`).
 - **Typography:** Inter, self-hosted via `next/font/google`.
 - **Locale strategy:** Typed bilingual copy (`en`, `es`) on `/[locale]` routes, negotiated from `Accept-Language` and persisted in the `nexora.locale` cookie.
 

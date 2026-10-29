@@ -10,7 +10,7 @@ export function SiteFooter({
   locale: Locale;
 }>) {
   return (
-    <footer className="bg-[#07182e] px-5 py-10 text-white sm:px-8">
+    <footer className="bg-[#15100e] px-5 py-10 text-white sm:px-8">
       <div className="mx-auto flex max-w-7xl flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
         <Link href={`/${locale}`} className="flex items-center gap-3">
           <span className="kh-brand-mark grid h-9 w-9 place-items-center rounded-md text-sm font-black text-white">

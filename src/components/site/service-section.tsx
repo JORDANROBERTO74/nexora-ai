@@ -19,11 +19,11 @@ export function ServiceSection({
     >
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
         <div className="kh-service-card mx-auto max-w-4xl px-6 py-10 text-center sm:px-14 sm:py-12">
-          <p className="kh-eyebrow text-[#005ea8]">{content.eyebrow}</p>
+          <p className="kh-eyebrow text-[#c2410c]">{content.eyebrow}</p>
           <p className="mt-7 text-balance text-lg font-medium leading-8 text-[#2f3642] sm:text-2xl sm:leading-10 lg:text-3xl">
             <strong className="font-extrabold text-[#111827]">{content.leadStrong}</strong>
             {content.leadBefore}
-            <span className="text-[#005ea8]">{content.leadEmphasis}</span>
+            <span className="text-[#c2410c]">{content.leadEmphasis}</span>
             {content.leadAfter}
           </p>
         </div>
@@ -31,7 +31,7 @@ export function ServiceSection({
         <div id="features" className="pt-28">
           <h2 className="text-center text-4xl font-extrabold tracking-normal text-[#111827] sm:text-5xl">
             {features.titleLead}
-            <span className="text-[#005ea8]">{features.titleEmphasis}</span>
+            <span className="text-[#c2410c]">{features.titleEmphasis}</span>
           </h2>
 
           <div className="mx-auto mt-16 grid max-w-6xl gap-7 md:grid-cols-2 lg:grid-cols-3">
