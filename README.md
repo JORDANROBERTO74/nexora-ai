@@ -6,16 +6,16 @@ The business-aware engine for your AI agents. A bilingual product site for Nexor
 
 ## Overview
 
-Nexora is a B2B landing page for an AI automation platform. It pairs a navy-and-signal-blue marketing surface with three product mockups (Command Center, Operational Automation, governance logs) and four interactive demos that replay a real support thread end to end: signal → orchestration → risk assessment → approval → governed reply → audit trail.
+Nexora is a B2B landing page for an AI automation platform. It pairs a warm charcoal-and-burnt-orange marketing surface with four product mockups (hero Command Center, Control panel, Operational workflows and a spend-approval demo) that share one console language: status bar, hairline columns, state dots and a monospace policy footer.
 
 The layout, sections and copy intent come from the source template; this build migrates them to a typed design system, adds bilingual routing and removes the third-party material the original shipped.
 
 ## Key Features
 
-- **Four interactive demos:** `churn`, `migration`, `expansion` and `consolidation` scenes, each with its own channel thread, orchestration steps, risk panel and evidence. They start when they enter the viewport, pause when they leave, and settle on their final state under `prefers-reduced-motion`.
+- **One interactive demo:** A procurement spend-approval run (`#PR-2481`) checks budget, vendor risk, spend policy and contract terms in sequence, then routes the $48k decision to the CFO. It plays on mount and loops, and settles on its final state under `prefers-reduced-motion`.
 - **Bilingual routing (`en` / `es`):** Typed dictionaries, `/[locale]` segments, `Accept-Language` negotiation and a `nexora.locale` cookie that keeps the visitor's choice.
-- **Product-accurate mockups:** The hero Command Center and the automation dashboard are hand-built in HTML/CSS, not screenshots, so they stay sharp and translatable.
-- **Animated constellation:** A canvas node graph in the hero with device-pixel-ratio handling.
+- **Product-accurate mockups:** Hero Command Center, Control panel and Operational workflows share one `.kh-mock` surface (status chip, hairline columns, state icons, mono policy footer). They are hand-built in HTML/CSS, not screenshots, so they stay sharp and translatable.
+- **CSS-only hero:** A warm gradient with a radial highlight and a vignette; no canvas, particle graph or scroll-driven timeline.
 - **Metadata per locale:** Canonical URLs, `hreflang` with `x-default`, per-locale OpenGraph tags and a multilingual sitemap.
 - **Localised 404:** A `[locale]/[...rest]` catch-all routes unknown paths into the styled not-found page.
 - **Zero photography:** Every visual is CSS, inline SVG or a Lucide icon.
@@ -26,7 +26,7 @@ The layout, sections and copy intent come from the source template; this build m
 - **Library:** React 19.2.4
 - **Language:** TypeScript 5.7.3 (strict)
 - **Styling:** Tailwind CSS 4.3.3 with a CSS-first `@theme` palette
-- **Motion:** Framer Motion 14 for the demo panels; CSS keyframes for the marketing surface
+- **Motion:** CSS transitions plus a small React state machine for the spend-approval demo; no animation library on the marketing surface.
 - **Icons:** Lucide React
 - **Analytics:** `@vercel/analytics`
 - **Package Manager:** pnpm 11.17
@@ -46,16 +46,15 @@ nexora-ai/
 │   │   │   ├── not-found.tsx       # Styled 404
 │   │   │   ├── opengraph-image.tsx # 1200x630 social card
 │   │   │   └── page.tsx            # Composed landing route
-│   │   ├── globals.css             # Tokens, kh-* design layer, demo styles
+│   │   ├── globals.css             # Tokens, shared kh-mock surface, section styles
 │   │   ├── icon.svg                # Node-graph brand mark
 │   │   ├── robots.ts
 │   │   └── sitemap.ts
 │   ├── components/
 │   │   ├── site/                   # Header, hero, systems, service, solutions,
 │   │   │                           # control, leverage, governance, demos, pilot, footer
-│   │   ├── demos/                  # Scene engine + four scenario bundles
-│   │   ├── ui/                     # Badge, button, input used by the demos
-│   │   ├── constellation-background.tsx
+│   │   ├── demos/spend-approval-demo.tsx
+│   │   ├── ui/                     # Badge, button, input primitives
 │   │   └── icons/channel.tsx
 │   ├── config/site.ts
 │   ├── i18n/                       # Locale config, dictionary loader, en/es copy
@@ -66,6 +65,8 @@ nexora-ai/
 ├── package.json
 └── tsconfig.json
 ```
+
+`src/components/demos/slack-demo/` holds the retired four-scenario scene engine. It is no longer imported by any route and can be removed.
 
 ## Getting Started
 
@@ -110,9 +111,9 @@ Set `NEXT_PUBLIC_SITE_URL` when serving from a custom domain; otherwise the cano
 
 ## Performance & SEO
 
-- `/en` and `/es` are statically generated; the locale redirect runs in edge middleware.
-- The four demos only start when they intersect the viewport and pause when they leave, so a long page does not decode four scene timelines at once.
-- The constellation canvas pauses its animation loop when the hero scrolls out of view and honours `prefers-reduced-motion`.
+- `/en` and `/es` are statically generated; the locale redirect runs in the `src/proxy.ts` proxy.
+- Apart from the header menu and locale switcher, the only interactive client component is the spend-approval demo; the rest of the page is static HTML, CSS and inline SVG, with no canvas loops or scroll-driven timelines.
+- The demo clears its interval on unmount and skips the sequence entirely under `prefers-reduced-motion`.
 - `sitemap.xml` and `robots.txt` follow the locale configuration; OpenGraph cards are generated from the same dictionaries as the page.
 - Inter is self-hosted through `next/font` with automatic size-adjust metrics, so there is no font-driven layout shift.
 
@@ -120,9 +121,9 @@ Set `NEXT_PUBLIC_SITE_URL` when serving from a custom domain; otherwise the cano
 
 - Semantic landmarks and a single `h1`; each section is headed in order.
 - Mobile navigation exposes `aria-expanded` / `aria-controls`, closes on `Escape`, and marks the active locale with `aria-current`.
-- Every demo panel has a labelled region; decorative canvas and glyphs are `aria-hidden`.
-- Reduced motion is honoured at three levels: CSS keyframes, the canvas loop and the scene engine.
-- Text meets WCAG AA on the navy and paper surfaces.
+- Every mock surface keeps its text available to screen readers; decorative glyphs and status icons are `aria-hidden`.
+- The spend-approval demo reads `prefers-reduced-motion` and renders its final state instead of playing.
+- Text meets WCAG AA on the dark and paper surfaces.
 
 ## Compliance & Licensing
 
