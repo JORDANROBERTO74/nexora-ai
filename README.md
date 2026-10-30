@@ -136,4 +136,4 @@ This project was rebuilt under clean-room principles:
 
 ## License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+Proprietary, all rights reserved. See [LICENSE](LICENSE) for details.

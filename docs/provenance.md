@@ -50,3 +50,8 @@ The template referenced and reproduced third-party products. None of it ships:
 - `pnpm typecheck`, `pnpm lint` and `pnpm build` complete without errors.
 - `robots.txt`, multilingual `sitemap.xml`, `hreflang` alternates and a generated 1200x630 OpenGraph card are in place.
 - The four interactive demos pause when out of the viewport and render their final state under `prefers-reduced-motion`.
+
+## License note
+
+This repository contains derivative work. The license covers only the original
+contributions of the copyright holder. See [LICENSE](../LICENSE).
